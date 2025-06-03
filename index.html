@@ -3,7 +3,13 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
-  <title>Acessar Formulário</title>
+  <title>Black Burgers - Formulário</title>
+  <meta name="description" content="Envie suas informações através do nosso formulário." />
+  <meta property="og:title" content="Black Burgers - Envie suas fotos" />
+  <meta property="og:description" content="Clique em continuar para ser redirecionado ao formulário." />
+  <meta property="og:image" content="https://ccmpedidoonline.com.br/cdn/logoblackburgerssaocarlos.png" />
+  <meta property="og:type" content="website" />
+  <meta property="og:url" content="https://oluap3501.github.io/black-burguer/" />
   <style>
     body {
       margin: 0;
@@ -12,50 +18,50 @@
       font-family: Arial, sans-serif;
       display: flex;
       flex-direction: column;
-      align-items: center;
       justify-content: center;
+      align-items: center;
+      text-align: center;
       height: 100vh;
     }
 
     img.logo {
-      max-width: 300px;
-      width: 100%;
+      max-width: 250px;
       margin-bottom: 40px;
     }
 
-    .button {
+    a.button {
+      display: inline-block;
       padding: 15px 30px;
       background-color: #FEF200;
-      color: #000000;
-      border: none;
+      color: #000;
+      text-decoration: none;
       font-size: 18px;
       font-weight: bold;
-      cursor: pointer;
-      border-radius: 8px;
-      transition: background-color 0.2s ease-in-out;
+      border-radius: 10px;
+      box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+      transition: background 0.3s ease;
     }
 
-    .button:hover {
-      background-color: #e6d900;
+    a.button:hover {
+      background-color: #f0e000;
+    }
+
+    small {
+      margin-top: 30px;
+      color: gray;
     }
   </style>
 </head>
 <body>
 
-  <!-- Logo da empresa -->
-  <img src="https://ccmpedidoonline.com.br/cdn/logoblackburgerssaocarlos.png" alt="Logo Black Burgers" class="logo" />
+  <img class="logo" src="https://ccmpedidoonline.com.br/cdn/logoblackburgerssaocarlos.png" alt="Logo Black Burgers" />
 
-  <!-- Botão para abrir o formulário -->
-  <button class="button" onclick="abrirFormulario()">
-    Acessar Formulário
-  </button>
+  <!-- 🔗 LINK COM target="_blank" -->
+  <a class="button" href="https://forms.gle/NFgheEAHD4m2Ncpp7" target="_blank" rel="noopener noreferrer">
+    Continuar para o Formulário
+  </a>
 
-  <script>
-    function abrirFormulario() {
-      const url = 'https://forms.gle/NFgheEAHD4m2Ncpp7';
-      window.open(url, '_blank');
-    }
-  </script>
+  <small>Se não abrir, segure o botão e escolha abrir no navegador</small>
 
 </body>
 </html>
