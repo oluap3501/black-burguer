@@ -3,65 +3,65 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
-  <title>Black Burgers - Formulário</title>
-  <meta name="description" content="Envie suas informações através do nosso formulário." />
-  <meta property="og:title" content="Black Burgers - Envie suas fotos" />
-  <meta property="og:description" content="Clique em continuar para ser redirecionado ao formulário." />
+  <title>Redirecionando para o Formulário...</title>
+
+  <!-- METADADOS DE SOCIAL MEDIA -->
+  <meta property="og:title" content="Formulário Black Burgers" />
+  <meta property="og:description" content="Clique para continuar no navegador externo" />
   <meta property="og:image" content="https://ccmpedidoonline.com.br/cdn/logoblackburgerssaocarlos.png" />
-  <meta property="og:type" content="website" />
   <meta property="og:url" content="https://oluap3501.github.io/black-burguer/" />
+  <meta name="twitter:card" content="summary_large_image" />
+
+  <!-- TENTATIVA DE REDIRETO AUTOMÁTICO -->
+  <meta http-equiv="refresh" content="1;url=https://forms.gle/NFgheEAHD4m2Ncpp7" />
+
   <style>
     body {
       margin: 0;
-      padding: 0;
-      background-color: #ffffff;
-      font-family: Arial, sans-serif;
-      display: flex;
-      flex-direction: column;
-      justify-content: center;
-      align-items: center;
+      padding: 40px 20px;
+      background-color: #fff;
+      font-family: sans-serif;
       text-align: center;
-      height: 100vh;
+      color: #111;
     }
 
     img.logo {
-      max-width: 250px;
-      margin-bottom: 40px;
+      max-width: 200px;
+      margin-bottom: 30px;
     }
 
-    a.button {
+    .button {
       display: inline-block;
-      padding: 15px 30px;
-      background-color: #FEF200;
-      color: #000;
-      text-decoration: none;
+      margin-top: 20px;
+      padding: 16px 28px;
       font-size: 18px;
       font-weight: bold;
-      border-radius: 10px;
-      box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
-      transition: background 0.3s ease;
+      color: #000;
+      background-color: #FEF200;
+      text-decoration: none;
+      border-radius: 8px;
     }
 
-    a.button:hover {
-      background-color: #f0e000;
-    }
-
-    small {
-      margin-top: 30px;
-      color: gray;
+    .info {
+      color: #444;
+      margin-top: 40px;
     }
   </style>
+
+  <script>
+    // REDIRETO VIA JS COMO BACKUP
+    setTimeout(function () {
+      window.location.href = "https://forms.gle/NFgheEAHD4m2Ncpp7";
+    }, 1500);
+  </script>
 </head>
 <body>
 
-  <img class="logo" src="https://ccmpedidoonline.com.br/cdn/logoblackburgerssaocarlos.png" alt="Logo Black Burgers" />
+  <img class="logo" src="https://ccmpedidoonline.com.br/cdn/logoblackburgerssaocarlos.png" alt="Logo Black Burgers">
 
-  <!-- 🔗 LINK COM target="_blank" -->
   <a class="button" href="https://forms.gle/NFgheEAHD4m2Ncpp7" target="_blank" rel="noopener noreferrer">
-    Continuar para o Formulário
+    Acessar Formulário
   </a>
-
-  <small>Se não abrir, segure o botão e escolha abrir no navegador</small>
 
 </body>
 </html>
