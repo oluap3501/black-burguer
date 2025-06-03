@@ -3,63 +3,65 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
-  <title>Redirecionando para o Formulário...</title>
+  <title>Black Burgers | Formulário</title>
+  <meta name="description" content="Acesse o formulário Black Burgers para envio de fotos" />
 
-  <!-- METADADOS DE SOCIAL MEDIA -->
+  <!-- Open Graph / Social Preview -->
   <meta property="og:title" content="Formulário Black Burgers" />
-  <meta property="og:description" content="Clique para continuar no navegador externo" />
+  <meta property="og:description" content="Clique para continuar no navegador" />
   <meta property="og:image" content="https://ccmpedidoonline.com.br/cdn/logoblackburgerssaocarlos.png" />
   <meta property="og:url" content="https://oluap3501.github.io/black-burguer/" />
   <meta name="twitter:card" content="summary_large_image" />
 
-  <!-- TENTATIVA DE REDIRETO AUTOMÁTICO -->
-  <meta http-equiv="refresh" content="1;url=https://forms.gle/NFgheEAHD4m2Ncpp7" />
-
   <style>
     body {
       margin: 0;
-      padding: 40px 20px;
-      background-color: #fff;
-      font-family: sans-serif;
+      padding: 0;
+      background-color: #ffffff;
+      font-family: Arial, sans-serif;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+      height: 100vh;
       text-align: center;
-      color: #111;
     }
 
     img.logo {
-      max-width: 200px;
-      margin-bottom: 30px;
+      max-width: 240px;
+      margin-bottom: 40px;
     }
 
-    .button {
+    a.button {
       display: inline-block;
-      margin-top: 20px;
-      padding: 16px 28px;
+      padding: 16px 32px;
+      background-color: #FEF200;
+      color: #000000;
       font-size: 18px;
       font-weight: bold;
-      color: #000;
-      background-color: #FEF200;
       text-decoration: none;
       border-radius: 8px;
+      box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+      transition: background 0.2s ease-in-out;
     }
 
-    .info {
-      color: #444;
-      margin-top: 40px;
+    a.button:hover {
+      background-color: #e6d900;
     }
   </style>
-
-  <script>
-    // REDIRETO VIA JS COMO BACKUP
-    setTimeout(function () {
-      window.location.href = "https://forms.gle/NFgheEAHD4m2Ncpp7";
-    }, 1500);
-  </script>
 </head>
 <body>
 
+  <!-- Logo -->
   <img class="logo" src="https://ccmpedidoonline.com.br/cdn/logoblackburgerssaocarlos.png" alt="Logo Black Burgers">
 
-  <a class="button" href="https://forms.gle/NFgheEAHD4m2Ncpp7" target="_blank" rel="noopener noreferrer">
+  <!-- Botão real que força abertura no navegador externo -->
+  <a
+    class="button"
+    href="https://forms.gle/NFgheEAHD4m2Ncpp7"
+    target="_blank"
+    rel="noopener noreferrer"
+  >
     Acessar Formulário
   </a>
 
